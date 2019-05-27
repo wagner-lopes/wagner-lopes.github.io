@@ -145,6 +145,10 @@ img::-moz-selection {
   color: #55CAD9;
 }
 
+#contactForm {
+  margin-top: 50px;
+}
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 25px;
@@ -300,6 +304,10 @@ header.masthead .intro-text .intro-heading {
 
 #portfolio * {
   z-index: 2;
+}
+
+#sendMessageButton {
+  margin-top: 10px;
 }
 
 @media (min-width: 767px) {
