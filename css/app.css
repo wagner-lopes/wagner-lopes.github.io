@@ -310,6 +310,12 @@ header.masthead .intro-text .intro-heading {
   margin-top: 10px;
 }
 
+#microcampLogo {
+  background-color: white;
+}
+
+/*.timeline > li .timeline-image .microcamp*/
+
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
