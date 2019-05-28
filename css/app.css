@@ -6,8 +6,11 @@
 
 body {
   overflow-x: hidden;
-  font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: sans-serif;
+  letter-spacing: 1px;
 }
+
+/* Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial , 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji*/
 
 p {
   line-height: 1.75;
@@ -51,7 +54,7 @@ h6 {
   font-style: italic;
   margin-bottom: 75px;
   text-transform: none;
-  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -314,7 +317,48 @@ header.masthead .intro-text .intro-heading {
   background-color: white;
 }
 
-/*.timeline > li .timeline-image .microcamp*/
+#linkedin-timeline {
+  font-size: 5rem;
+  color: white;
+  padding-bottom: 50px;
+  background: white;
+}
+
+#linkedin-timeline-div {
+  background-color: #e9ecef;
+  border: 7px solid #e9ecef;
+  border-radius: 0%;
+  border-radius: 10px;
+}
+
+#linkedin-timeline-div:hover {
+  border: 7px solid #55CAD9;
+}
+
+#linkedin-timeline-heading {
+  margin-top: 14%;
+}
+
+/*
+.timeline > li .timeline-image {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  margin-left: 0;
+  text-align: center;
+  color: white;
+  border: 7px solid #e9ecef;
+  border-radius: 100%;
+  background-color: #55CAD9;
+}
+.timeline > li .timeline-image:hover {
+  border: 7px solid #55CAD9;
+  background-color: #55CAD9;
+}
+
+*/
 
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
@@ -467,6 +511,11 @@ header.masthead .intro-text .intro-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
+  background-color: #55CAD9;
+}
+
+.timeline > li .timeline-image:hover {
+  border: 7px solid #55CAD9;
   background-color: #55CAD9;
 }
 
@@ -693,7 +742,7 @@ ul.social-buttons {
 }
 
 ul.social-buttons li a {
-  font-size: 20px;
+  font-size: 26px;
   line-height: 50px;
   display: block;
   width: 50px;
