@@ -333,10 +333,15 @@ header.masthead .intro-text .intro-heading {
 
 #linkedin-timeline-div:hover {
   border: 7px solid #55CAD9;
+  background-color: #55CAD9;
 }
 
 #linkedin-timeline-heading {
   margin-top: 14%;
+}
+
+#img-linkedin {
+  width: 100%;
 }
 
 /*
