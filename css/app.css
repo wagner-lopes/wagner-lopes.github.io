@@ -7,7 +7,7 @@
 body {
   overflow-x: hidden;
   font-family: sans-serif;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.2px;
 }
 
 /* Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial , 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji*/
@@ -36,6 +36,14 @@ h5,
 h6 {
   font-weight: 700;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+h2:after {
+  content: '';
+  display: block;
+  border: 2px solid black;
+  width: 100px;
+  margin: 15px auto;
 }
 
 .page-section {
@@ -309,6 +317,77 @@ header.masthead .intro-text .intro-heading {
   z-index: 2;
 }
 
+#books .portfolio-item {
+  right: 0;
+  margin: 0 0 15px;
+}
+
+#books .portfolio-item .portfolio-link {
+  position: relative;
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#books .portfolio-item .portfolio-link .portfolio-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  opacity: 0;
+  background: rgba(55, 125, 254, 0.918);
+}
+
+#books .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 1;
+}
+
+#books .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 20px;
+  margin-top: -12px;
+  text-align: center;
+  color: white;
+}
+
+#books .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px;
+}
+
+#books .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#books .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+  margin: 0;
+}
+
+#books .portfolio-item .portfolio-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+  background-color: #fff;
+}
+
+#books .portfolio-item .portfolio-caption h4 {
+  margin: 0;
+  text-transform: none;
+}
+
+#books .portfolio-item .portfolio-caption p {
+  font-size: 16px;
+  font-style: italic;
+  margin: 0;
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#books * {
+  z-index: 2;
+}
+
 #sendMessageButton {
   margin-top: 10px;
 }
@@ -376,6 +455,9 @@ header.masthead .intro-text .intro-heading {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
+  #books .portfolio-item {
+    margin: 0 0 30px;
+  }
 }
 
 .portfolio-modal {
@@ -399,10 +481,12 @@ header.masthead .intro-text .intro-heading {
 
 .portfolio-modal .modal-content p {
   margin-bottom: 30px;
+  text-align: justify;
 }
 
 .portfolio-modal .modal-content p.item-intro {
   font-size: 16px;
+  text-align: center;
   font-style: italic;
   margin: 20px 0 30px;
   font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -411,6 +495,7 @@ header.masthead .intro-text .intro-heading {
 .portfolio-modal .modal-content ul.list-inline {
   margin-top: 0;
   margin-bottom: 30px;
+  text-align: left;
 }
 
 .portfolio-modal .modal-content img {
