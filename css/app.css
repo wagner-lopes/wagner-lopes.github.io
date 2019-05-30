@@ -46,6 +46,10 @@ h2:after {
   margin: 15px auto;
 }
 
+.img-fluid {
+  height: auto;
+}
+
 .page-section {
   padding: 100px 0;
 }
@@ -63,12 +67,6 @@ h2:after {
   margin-bottom: 75px;
   text-transform: none;
   font-family: sans-serif;
-}
-
-@media (min-width: 768px) {
-  section {
-    padding: 150px 0;
-  }
 }
 
 .btn {
@@ -161,6 +159,9 @@ img::-moz-selection {
 }
 
 @media (min-width: 992px) {
+  #img-linkedin {
+    width: 3rem;
+  }
   #mainNav {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -221,6 +222,18 @@ header.masthead .intro-text .intro-heading {
 }
 
 @media (min-width: 768px) {
+  #img-linkedin {
+    width: 2rem;
+  }
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+  #books .portfolio-item {
+    margin: 0 0 30px;
+  }
+  #img-linkedin {
+    width: 2rem;
+  }
   header.masthead .intro-text {
     padding-top: 230px;
     padding-bottom: 200px;
@@ -238,6 +251,9 @@ header.masthead .intro-text .intro-heading {
     line-height: 75px;
     margin-bottom: 50px;
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  }
+  section {
+    padding: 150px 0;
   }
 }
 
@@ -325,7 +341,7 @@ header.masthead .intro-text .intro-heading {
 #books .portfolio-item .portfolio-link {
   position: relative;
   display: block;
-  max-width: 400px;
+  max-width: max-content;
   margin: 0 auto;
   cursor: pointer;
 }
@@ -422,42 +438,12 @@ header.masthead .intro-text .intro-heading {
   margin-top: 14%;
 }
 
-#img-linkedin {
-  width: 100%;
-}
-
 #about {
   padding-bottom: 150px;
 }
 
-/*
-.timeline > li .timeline-image {
-  position: absolute;
-  z-index: 100;
-  left: 0;
-  width: 80px;
-  height: 80px;
-  margin-left: 0;
-  text-align: center;
-  color: white;
-  border: 7px solid #e9ecef;
-  border-radius: 100%;
-  background-color: #55CAD9;
-}
-.timeline > li .timeline-image:hover {
-  border: 7px solid #55CAD9;
-  background-color: #55CAD9;
-}
-
-*/
-
-@media (min-width: 767px) {
-  #portfolio .portfolio-item {
-    margin: 0 0 30px;
-  }
-  #books .portfolio-item {
-    margin: 0 0 30px;
-  }
+#img-linkedin {
+  width: 1.6rem;
 }
 
 .portfolio-modal {
@@ -696,9 +682,16 @@ header.masthead .intro-text .intro-heading {
 }
 
 @media (min-width: 992px) {
-  /*
-  .timeline > li {
-    min-height: 150px;
+  /*#books .portfolio-item .portfolio-caption {
+    min-height: 134px;
+    padding: 15px;
+  }
+
+  #books .portfolio-item .portfolio-caption h4 {
+    font-size: 1.2rem;
+  }
+  #books .portfolio-item .portfolio-caption p {
+    font-size: 14px;
   }*/
   .timeline > li .timeline-panel {
     padding: 0 20px 20px;
@@ -725,11 +718,9 @@ header.masthead .intro-text .intro-heading {
 }
 
 @media (min-width: 1200px) {
-  /*
-  .timeline > li {
-    min-height: 170px;
+  #books .portfolio-item .portfolio-caption {
+    min-height: 134px;
   }
-  */
   .timeline > li .timeline-panel {
     padding: 0 20px 20px 100px;
   }
