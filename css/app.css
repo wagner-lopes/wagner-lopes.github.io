@@ -198,6 +198,11 @@ header.masthead .intro-text .intro-heading {
   border: 2px solid white;
 }
 
+#qualificacoes ul li:hover {
+  background-color: rgba(255,255,255,1);
+  color: #000;
+}
+
 #skills-div {
   width: 100%;
 }
@@ -260,7 +265,7 @@ header.masthead .intro-text .intro-heading {
     margin: 0 0 30px;
   }
   header.masthead .intro-text {
-    padding-top: 300px;
+    padding-top: 210px;
     padding-bottom: 200px;
   }
   header.masthead .intro-text .intro-lead-in {
