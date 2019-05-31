@@ -117,6 +117,10 @@ img::-moz-selection {
   background: transparent;
 }
 
+#skills-div {
+  width: 100%;
+}
+
 #mainNav {
   background-color: #212529;
 }
@@ -158,9 +162,48 @@ img::-moz-selection {
   margin-top: 50px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 460px) {
+  #img-linkedin {
+    width: 1.6rem;
+  }
+}
+
+@media (min-width: 768px) {
   #img-linkedin {
     width: 3rem;
+  }
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+  #books .portfolio-item {
+    margin: 0 0 30px;
+  }
+  header.masthead .intro-text {
+    padding-top: 230px;
+    padding-bottom: 200px;
+  }
+  header.masthead .intro-text .intro-lead-in {
+    font-size: 40px;
+    font-style: italic;
+    line-height: 40px;
+    margin-bottom: 25px;
+    font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  }
+  header.masthead .intro-text .intro-heading {
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 75px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  }
+  section {
+    padding: 150px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  #img-linkedin {
+    width: 3.5rem;
   }
   #mainNav {
     padding-top: 25px;
@@ -219,42 +262,6 @@ header.masthead .intro-text .intro-heading {
   line-height: 50px;
   margin-bottom: 25px;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
-
-@media (min-width: 768px) {
-  #img-linkedin {
-    width: 2rem;
-  }
-  #portfolio .portfolio-item {
-    margin: 0 0 30px;
-  }
-  #books .portfolio-item {
-    margin: 0 0 30px;
-  }
-  #img-linkedin {
-    width: 2rem;
-  }
-  header.masthead .intro-text {
-    padding-top: 230px;
-    padding-bottom: 200px;
-  }
-  header.masthead .intro-text .intro-lead-in {
-    font-size: 40px;
-    font-style: italic;
-    line-height: 40px;
-    margin-bottom: 25px;
-    font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  }
-  header.masthead .intro-text .intro-heading {
-    font-size: 75px;
-    font-weight: 700;
-    line-height: 75px;
-    margin-bottom: 50px;
-    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  }
-  section {
-    padding: 150px 0;
-  }
 }
 
 .service-heading {
@@ -441,11 +448,6 @@ header.masthead .intro-text .intro-heading {
 #about {
   padding-bottom: 150px;
 }
-
-#img-linkedin {
-  width: 1.6rem;
-}
-
 .portfolio-modal {
   padding-right: 0px !important;
 }
@@ -682,17 +684,6 @@ header.masthead .intro-text .intro-heading {
 }
 
 @media (min-width: 992px) {
-  /*#books .portfolio-item .portfolio-caption {
-    min-height: 134px;
-    padding: 15px;
-  }
-
-  #books .portfolio-item .portfolio-caption h4 {
-    font-size: 1.2rem;
-  }
-  #books .portfolio-item .portfolio-caption p {
-    font-size: 14px;
-  }*/
   .timeline > li .timeline-panel {
     padding: 0 20px 20px;
   }
