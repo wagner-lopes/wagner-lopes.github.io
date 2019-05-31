@@ -8,7 +8,7 @@ Author URI: http://www.diogocezar.com
 License: GNU General Public License v2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
-/* Browser Reset */
+/* Browser Reset 
 html,
 body,
 div,
@@ -75,7 +75,7 @@ legend {
 body {
 	line-height: 1;
 }
-
+*/
 ol,
 ul {
 	list-style: none;
@@ -128,7 +128,7 @@ section {
 }
 
 /* Basic Styles */
-/* Body */
+/* Body 
 body {
 	color: #666;
 	background-color: #fff;
@@ -157,7 +157,7 @@ body.et_cover_background {
 	-moz-background-size: cover !important;
 	background-size: cover !important;
 }
-
+*/
 /* Links */
 a {
 	color: #2ea3f2;
@@ -470,8 +470,6 @@ blockquote {
 
 .container {
 	position: relative;
-	width: 80%;
-	max-width: 1080px;
 	margin: auto;
 }
 
@@ -6016,12 +6014,6 @@ ul.et_pb_side_nav .side_nav_item a.active {
 	font-style: normal;
 }
 
-* {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
 /* Headers */
 .et_pb_column_1_3 h1,
 .et_pb_column_1_4 h1 {
@@ -6309,7 +6301,7 @@ p.et_pb_gallery_caption {
 
 .et_pb_blurb_content {
 	position: relative;
-	max-width: 550px;
+	max-width: 600px;
 	margin: 0 auto;
 }
 

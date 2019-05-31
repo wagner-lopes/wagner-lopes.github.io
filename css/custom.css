@@ -213,10 +213,6 @@ h1{
     transition: all 0.4s ease-in-out;
 }
 
-*{
-    transition: none!important;
-}
-
 .mobile_menu_bar{
     top: -1px;
 }
@@ -559,14 +555,14 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     line-height: 1em;
 }
-
+/*
 #qualificacoes .et_parallax_bg{
     -webkit-filter: blur(5px);
     -moz-filter: blur(5px);
     -o-filter: blur(5px);
     -ms-filter: blur(5px);
     filter: blur(5px);
-}
+}*/
 
 .et_pb_blurb h4 {
     line-height: 25px;
@@ -609,22 +605,6 @@ h1, h2, h3, h4, h5, h6 {
     min-width: 60px;
     font-size: 10pt;
 }
-
-/*
-
-#qualificacoes ul li.inverse{
-    background-color: rgba(255,255,255,1)!important;
-    color: #000!important;
-}
-
-#qualificacoes ul li.inverse:hover{
-    background-color: rgba(0,0,0,0.4)!important;
-    color: #fff!important;
-}
-
-*/
-
-
 
 #qualificacoes ul li:hover {
     background-color: rgba(255,255,255,1);
