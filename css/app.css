@@ -265,7 +265,13 @@ header.masthead .intro-text .intro-heading {
 }
 
 #mainNavContainer {
-  transform: scale(0.8);
+  transform: scale(0.7);
+}
+
+@media (min-width: 460px) {
+  #mainNavContainer {
+    transform: scale(0.8);
+  }
 }
 
 @media (min-width: 768px) {
