@@ -264,8 +264,14 @@ header.masthead .intro-text .intro-heading {
   width: 1.6rem;
 }
 
+#technologies ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 svg {
-  margin-left: -25px;
+  margin-left: -20px;
 }
 
 @media (min-width: 768px) {
@@ -328,8 +334,8 @@ svg {
     padding: 1.1em 1em !important;
   }
   #mainNav.navbar-shrink {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #212529;
   }
   #mainNav.navbar-shrink .navbar-brand {
