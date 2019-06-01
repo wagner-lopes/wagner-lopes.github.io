@@ -264,12 +264,20 @@ header.masthead .intro-text .intro-heading {
   width: 1.6rem;
 }
 
+svg {
+  transform: scale(0.8);
+}
+
 @media (min-width: 768px) {
+  svg {
+    transform: scale(1);
+  }
   .footer ul.quicklinks {
     font-size: 90%;
     margin-bottom: 20px;
     margin-top: 0px;
   }
+
   #img-linkedin {
     width: 2rem;
   }
