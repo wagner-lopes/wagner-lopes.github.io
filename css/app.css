@@ -264,12 +264,12 @@ header.masthead .intro-text .intro-heading {
   width: 1.6rem;
 }
 
-svg {
+#mainNavContainer {
   transform: scale(0.8);
 }
 
 @media (min-width: 768px) {
-  svg {
+  #mainNavContainer {
     transform: scale(1);
   }
   .footer ul.quicklinks {
