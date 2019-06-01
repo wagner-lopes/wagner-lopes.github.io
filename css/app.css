@@ -265,7 +265,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 svg {
-  transform: scale(0.9);
+  margin-left: -25px;
 }
 
 @media (min-width: 768px) {
