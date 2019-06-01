@@ -195,7 +195,7 @@ header.masthead .intro-text .intro-lead-in {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/home.png");
+  background-image: url("../img/home2.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -260,10 +260,8 @@ header.masthead .intro-text .intro-heading {
   margin-top: 50px;
 }
 
-@media (min-width: 460px) {
-  #img-linkedin {
-    width: 1.6rem;
-  }
+#img-linkedin {
+  width: 1.6rem;
 }
 
 @media (min-width: 768px) {
