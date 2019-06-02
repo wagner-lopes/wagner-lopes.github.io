@@ -157,6 +157,10 @@ h2:after {
   padding-top: 10px;
 }
 
+.hide-small-screens {
+  display: none;
+}
+
 ::-moz-selection {
   background: #55CAD9;
   text-shadow: none;
@@ -198,7 +202,7 @@ header.masthead {
   background-image: url("../img/home2.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center center;
+  background-position: center bottom;
   background-size: cover;
 }
 
@@ -275,6 +279,12 @@ svg {
 }
 
 @media (min-width: 768px) {
+  .hide-big-screens {
+    display: none;
+  }
+  .hide-small-screens {
+    display: unset;
+  }
   .footer ul.quicklinks {
     font-size: 90%;
     margin-bottom: 20px;
