@@ -50,13 +50,23 @@
 })(jQuery); // End of use strict
 
 
-var sendMessageButton = $("#sendMessageButton").click(function(){
-  var name = $("#name").val();
-  var email = $("#email").val();
-  var phone = $("#phone").val();
-  var message = $("#message").val();
+$("#sendMessageButton").click(function(){
 
-  document.location = "mailto:"+email+"?subject="+name+"&body=Phone: " + phone + ". " + message;
+  var url = 'https://fdh2f6oau9.execute-api.us-east-1.amazonaws.com/default/sendEmail';
+
+  var data = {
+    name: $("#name").val(),
+    email: $("#email").val(),
+    phone: $("#phone").val(),
+    message: $("#message").val(),
+  }
+
+  console.log(url);
+  console.log(data);
+  
+  var x = $.post(url, data);
+  console.log(x);
+
 
   // Email.send({
   //   Host : "email-smtp.us-east-1.amazonaws.com",
