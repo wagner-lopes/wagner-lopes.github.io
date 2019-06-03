@@ -48,3 +48,25 @@
   })
 
 })(jQuery); // End of use strict
+
+
+var sendMessageButton = $("#sendMessageButton").click(function(){
+  var name = $("#name").val();
+  var email = $("#email").val();
+  var phone = $("#phone").val();
+  var message = $("#message").val();
+
+  document.location = "mailto:"+email+"?subject="+name+"&body=Phone: " + phone + ". " + message;
+
+  // Email.send({
+  //   Host : "email-smtp.us-east-1.amazonaws.com",
+  //   // Username : "username",
+  //   // Password : "password",
+  //   To : 'wagnerlopes.bh@gmail.com',
+  //   From : "wagnerlopes.website@gmail.com",
+  //   Subject : "This is the subject",
+  //   Body : "And this is the body"
+  // }).then(
+  //   message => alert(message)
+  // );
+});
