@@ -52,7 +52,7 @@
 
 $("#sendMessageButton").click(function(){
 
-  var url = 'https://fdh2f6oau9.execute-api.us-east-1.amazonaws.com/default/sendEmail';
+  
 
   var data = {
     name: $("#name").val(),
@@ -61,22 +61,15 @@ $("#sendMessageButton").click(function(){
     message: $("#message").val(),
   }
 
-  console.log(url);
-  console.log(data);
+  var url = 'https://k16mj9kbqc.execute-api.us-east-1.amazonaws.com/default/sendEmail';
   
-  var x = $.post(url, data);
-  console.log(x);
+  console.log(data);
 
-
-  // Email.send({
-  //   Host : "email-smtp.us-east-1.amazonaws.com",
-  //   // Username : "username",
-  //   // Password : "password",
-  //   To : 'wagnerlopes.bh@gmail.com',
-  //   From : "wagnerlopes.website@gmail.com",
-  //   Subject : "This is the subject",
-  //   Body : "And this is the body"
-  // }).then(
-  //   message => alert(message)
-  // );
+  $.ajax({
+    type: "POST",
+    url: url,
+    data: data,
+    success: success,
+    dataType: "json"
+  });
 });
